@@ -33,6 +33,7 @@ def normalize_objects_in_directory(directory_path):
             new_path = os.path.join(root, new_name)
 
             if new_name != folder_name:
+                new_path = unique_path(new_path)
                 os.rename(folder_path, new_path)
 
         for file_name in files:
@@ -41,4 +42,20 @@ def normalize_objects_in_directory(directory_path):
             new_path = os.path.join(root, new_name)
 
             if new_name != file_name:
+                new_path = unique_path(new_path)
                 os.rename(file_path, new_path)
+
+
+def unique_path(path):
+    if not os.path.exists(path):
+        return path
+
+    base, extension = os.path.splitext(path)
+    counter = 1
+    new_path = f"{base}_{counter}{extension}"
+
+    while os.path.exists(new_path):
+        counter += 1
+        new_path = f"{base}_{counter}{extension}"
+
+    return new_path

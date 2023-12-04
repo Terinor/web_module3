@@ -662,6 +662,17 @@ files = [
 ]
 
 [[package]]
+name = "rarfile"
+version = "4.1"
+description = "RAR archive reader for Python"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "rarfile-4.1-py3-none-any.whl", hash = "sha256:17d7554c93c776ceae677e9d927051267d4c5eba38bf64b9cc89a415d9a5f901"},
+    {file = "rarfile-4.1.tar.gz", hash = "sha256:db60b3b5bc1c4bdeb941427d50b606d51df677353385255583847639473eda48"},
+]
+
+[[package]]
 name = "texttable"
 version = "1.7.0"
 description = "module to create simple ASCII tables"
@@ -675,4 +686,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "bf9d3659d4575a75346834746d8f496f334c68fe4f82b7535c3e232872bc7adc"
+content-hash = "e75ec6e3a06495762ba9d7f98f7a32558cd6a1dd19c4a7422ef5736104d424fa"
