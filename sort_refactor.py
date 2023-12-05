@@ -1,6 +1,5 @@
 import os
 import shutil
-import py7zr
 from renaming_files import rename_file_with_folder_name
 from archive_handler import handle_archived_file
 
@@ -27,7 +26,7 @@ def handle_regular_file(file_path, file_extension, directory_path, categories):
             move_to_destination(file_path, dest_folder_path)
             return
 
-    print(f"Unknown file extension: {file_path}")
+    #print(f"Unknown file extension: {file_path}")
 
 
 def move_to_destination(file_path, dest_folder_path):

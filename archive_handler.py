@@ -15,9 +15,9 @@ def handle_archived_file(file_path, file_name, file_extension, directory_path):
 
     if file_extension == '.7z':
         unpack_7z_archive(file_path, archive_dest_folder_path)
-
-    elif file_extension == '.rar':
-        unpack_rar_archive(file_path, archive_dest_folder_path)
+    #
+    # elif file_extension == '.rar':
+    #     unpack_rar_archive(file_path, archive_dest_folder_path)
 
     elif file_extension in supported_extensions:
         # Обробка інших підтримуваних форматів
